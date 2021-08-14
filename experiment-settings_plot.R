@@ -24,7 +24,11 @@ for(i in 1:n_iterations) {
   message(paste0("Iteration -- ", i))
   
   # random sampling; 8000 words were chosen from each author's corpus
-  sampled <- fem_corpus %>% # fem_corpus is the variable containing the data: id = author's name, texts = all texts by the author merged together as a character vector
+  sampled <- fem_corpus %>% 
+    # fem_corpus is the variable containing the data: 
+    #id = author's name, 
+    #texts = all texts by the author merged together as a character vector
+    
     unnest_tokens(input = texts, output = word, token = "words") %>% 
     group_by(id) %>% 
     sample_n(8000) %>% 
@@ -64,13 +68,13 @@ for(i in 1:n_iterations) {
   
 }
 
-save(matrices, file = "final/Smirnova_matrices.Rda")
-save(list_of_trees, file = "final/Smirnova_list_of_trees.Rda")
+save(matrices, file = "Smirnova_matrices.Rda")
+save(list_of_trees, file = "Smirnova_list_of_trees.Rda")
 
 ####### Plot 1: creating the plot from prepared phylo data #######
 
 # load prepared data (the list of phylo lists)
-load("final/Smirnova_list_of_trees.Rda")
+load("Smirnova_list_of_trees.Rda")
 
 # creating the consensus tree with 50% agreement
 consensus = ape::consensus(list_of_trees, p=0.5)
@@ -79,5 +83,3 @@ consensus = ape::consensus(list_of_trees, p=0.5)
 plot=ggtree(consensus,layout="circular",size=0.5) 
 plot + geom_tiplab(aes(color=label),hjust=-.1,size=7.5) + guides(color=F) + 
   theme(plot.margin = unit(c(4,4,4,4), "cm"))
-
-ggsave("final/Smirnova_Plot1.png", plot = last_plot(), width = 15, height = 15, dpi = 300)  
