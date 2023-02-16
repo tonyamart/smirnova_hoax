@@ -1,8 +1,12 @@
-### Hoax "The Works by Anna Smirnova"
+### Hoax "Various Poems by Anna Smirnova"
 This repo contains the code and data used in the article: *Martynenko, A.* Unreadable Poems of a Non-existent Poetess: An Image of a Female Poet in One 19th-century Hoax.  
   
-The folder `data` includes female corpora (folder `corpus`) and word frequencies matrices used in the experiment (after sampling, see: `Smirnova_martices.Rda`). The resulting data with list of phylo trees that was used for the plot `Smirnova_Figure_1_delta.png` are stored as `Smirnova_list_of_trees.Rda`.  
-More on the experiment settings is explained in the notebook `Smirnova_experiment`.  
+The folder `data` includes:  
+* corpus used for the experiment (see `data/corpus/corpus_chunks.zip` for reshuffled grouped texts; for raw texts by female poets, see `data/corpus/raw_texts_female_poets.zip`);  
+* word frequencies and authors' corpus sizes (n tokens) stored in `data/additional`;  
+* matrices and list of trees used for the consensus tree in the experiment.  
+  
+The experiment settings are explained in the notebook `Smirnova_experiment`.  
   
   
 #### Paper summary
