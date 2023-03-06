@@ -1,6 +1,9 @@
 ### Hoax "Various Poems by Anna Smirnova"
 The repository contains the code and data used in the article: *Martynenko, A.* Unreadable Poems of a Non-existent Poetess: An Image of a Female Poet in One 19th-century Hoax.  
   
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7702517.svg)](https://doi.org/10.5281/zenodo.7702517)  
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]  
+  
 The folder `data` includes:  
 * corpus used for the experiment (see `data/corpus/corpus_chunks.zip` for reshuffled grouped texts; for raw texts by female poets, see `data/corpus/raw_texts_female_poets.zip`);  
 * word frequencies and authors' corpus sizes (n tokens) stored in `data/additional`;  
