@@ -3,8 +3,6 @@ The repository contains the code and data used in the article: *Martynenko, A.* 
   
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7702517.svg)](https://doi.org/10.5281/zenodo.7702517)  
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
-[cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/  
-[cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg  
   
 The folder `data` includes:  
 * corpus used for the experiment (see `data/corpus/corpus_chunks.zip` for reshuffled grouped texts; for raw texts by female poets, see `data/corpus/raw_texts_female_poets.zip`);  
@@ -16,3 +14,6 @@ The experiment settings are explained in the notebook `Smirnova_experiment`.
   
 #### Paper summary
 While in many cases quantitative approaches to women's writings aim to take female authors out of oblivion, digging into historical corpora of "the great unread" may as well reveal the other side of the coin, such as literary forgeries and sexist parodies on women's literary styles. This article discusses one such hoax, a poetry collection published in 1837 in Russia in the name of a 15-year-old girl. On the one hand, the book's preface reflects typical 19th-century prejudices about women authors, mocking both the images of a child prodigy and an emancipated professional poetess. On the other hand, the poems themselves were intentionally made meaningless and almost unreadable by human readers. Tracing the historical reasons behind the fake-poetess image, this article suggests a computational method to analyse the disrupted content of the book, inquiring the sources of the hoax's parodic poetic style.  
+  
+[cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
+[cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
